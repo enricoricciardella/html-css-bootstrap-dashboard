@@ -17,8 +17,8 @@
 <!-- BODY -->
 
 <body>
-     <!-- Colore Dark + data-bs-theme  -->
-     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <!-- Colore Dark + data-bs-theme  -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <!-- /Colore Dark + data-bs-theme  -->
 
 
@@ -64,22 +64,63 @@
 
     <!-- MAIN -->
     <main>
-        <div class="container">
+        <div class="container my-3">
             <h2>Nuovo Libro</h2>
-            
-                <div class="row">
-                  <!--Nome Autore -->
-                  <div class="col-6 mb-3">
-                    <label for="nomeAutore" class="form-label">Nome Autore</label>
-                    <input type="text" class="form-control" id="nomeAutore" placeholder="Inserisci il nome dell'Autore">
-                  </div>
-                  <!--Cognome Autore -->
-                  <div class="col-6 mb-3">
-                    <label for="cognomeAutore" class="form-label">Cognome Autore</label>
-                    <input type="text" class="form-control" id="cognomeAutore" placeholder="Inserisci il cognome dell'Autore">
-                  </div>
+
+            <div class="row my-4">
+                <!--Nome Autore -->
+                <div class="col-6 mb-3">
+                    <label for="nomeautore" class="form-label fs-4">Nome Autore</label>
+                    <input type="text" class="form-control" id="nomeautore" placeholder="Inserisci il nome dell'Autore">
                 </div>
-              </div>
+                <!--Cognome Autore -->
+                <div class="col-6 mb-3">
+                    <label for="cognomeautore" class="form-label fs-4">Cognome Autore</label>
+                    <input type="text" class="form-control" id="cognomeautore"
+                        placeholder="Inserisci il cognome dell'Autore">
+                </div>
+                <!-- TITOLO -->
+                <div class="col-12 mb-3 fs-4">
+                    <label for="titolo">Titolo</label>
+                    <input type="text" class="form-control" id="titolo-del-libro" placeholder="Inserisci titolo del libro">
+                    <div id="passwordHelpBlock" class="form-text">Titolo versione Italiana</div>
+                </div>
+                <!-- SELEZIONE DEL GENERE -->
+                <div class="fs-4">
+                    Genere
+                </div>
+                <div class="row">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Scegli il genere</option>
+                    <option value="1">Horror</option>
+                    <option value="2">Fantasy</option>
+                    <option value="3">Adventure</option>
+                  </select>
+                  <!-- Anno di Pubblicazione -->
+                  <div class="col-12 mb-3 my-4 fs-4">
+                    <label for="titolo" class="">Anno di pubblicazione</label>
+                    <input type="text" class="form-control" id="titolo-del-libro" placeholder="Inserisci l'anno">
+                    <!-- Inserisci ISBN -->
+                    <div class="col-12 mb-3 my-4 fs-4">
+                        <label for="titolo" class="">ISBN#</label>
+                        <input type="text" class="form-control" id="titolo-del-libro" placeholder="Inserisci il codice ISBN#">
+
+                        <hr class="my-5">
+                        <div class="col12 my-4">
+                            <div class="form-floating">
+                                
+                                <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2"></label>
+                              </div>
+
+
+
+                        </div>
+
+
+                </div>
+            </div>
+
 
 
         </div>
@@ -90,7 +131,7 @@
 
 
     </main>
-   
+
 
 
 
